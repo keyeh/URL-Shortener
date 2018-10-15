@@ -1,0 +1,27 @@
+{
+    "name": "url-shortener",
+    "version": "1.0.0",
+    "description": "URL Shortener code test/interview",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node src/backend/backend.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/keyeh/URL-Shortener.git"
+    },
+    "author": "keyeh",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/keyeh/URL-Shortener/issues"
+    },
+    "homepage": "https://github.com/keyeh/URL-Shortener#readme",
+    "devDependencies": {
+        "eslint": "^5.7.0",
+        "prettier": "^1.14.3"
+    },
+    "dependencies": {
+        "express": "^4.16.4"
+    }
+}
