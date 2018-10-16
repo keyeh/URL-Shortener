@@ -4,8 +4,8 @@
     "description": "URL Shortener code test/interview",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node src/backend/backend.js"
+        "test": "intern",
+        "start": "node src/app.js"
     },
     "repository": {
         "type": "git",
@@ -18,8 +18,12 @@
     },
     "homepage": "https://github.com/keyeh/URL-Shortener#readme",
     "devDependencies": {
+        "chai": "^4.2.0",
         "eslint": "^5.7.0",
-        "prettier": "^1.14.3"
+        "intern": "^4.3.1",
+        "prettier": "^1.14.3",
+        "sinon": "^7.0.0",
+        "sinon-express-mock": "^2.0.5"
     },
     "dependencies": {
         "body-parser": "^1.18.3",
