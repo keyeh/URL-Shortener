@@ -2,7 +2,8 @@ const express = require("express"),
     app = express(),
     bodyParser = require("body-parser"),
     port = process.env.PORT || 9000,
-    longToShort = require("./longToShort");
+    longToShort = require("./longToShort"),
+    shortToLong = require("./shortToLong");
 
 app.use(bodyParser.urlencoded({ extended: true })); // support HTML form
 app.use(bodyParser.json()); // support json also
@@ -15,5 +16,6 @@ const asyncMiddleware = (fn) => (req, res, next) => {
 
 // Routes
 app.post("/api/make_short", asyncMiddleware(longToShort));
+app.get("/:short_url", asyncMiddleware(shortToLong));
 
 app.listen(port, () => console.log(`URL shortener listening on port ${port}!`));
