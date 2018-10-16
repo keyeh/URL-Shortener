@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="A simple URL shortener">
+
+    <!-- Still include responsive meta tag even though there isn't any css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>URL Shortener</title>
+</head>
+
+<body>
+    <h1>URL Shortener</h1>
+    <form action="/api/make_short" target="_blank" method="POST">
+        <input type="text" name="url" placeholder="eg. https://apple.com">
+        <input type="submit" value="Create"><br />
+        <small>Must be a complete URL including http/https</small>
+    </form>
+</body>
+
+</html>
