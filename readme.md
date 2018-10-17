@@ -4,8 +4,9 @@
 
 ## Online demo
 
-https://shorten.pi.keyeh.io
+https://shorten.pi.keyeh.io (Hosted on Raspbery Pi Docker swarm)
 
+In case the above link doesn't work try http://35.229.113.190
 ## Assumptions
 
 -   Straight HTML. No need for any CSS. (basic/ugly frontend is ok)
